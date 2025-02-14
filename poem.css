@@ -1,0 +1,107 @@
+.poem {
+    width: 90%; /* Container width */
+    margin: 0 auto; /* Center the container */
+    position: relative; /* Enables absolute positioning for text */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent text from spilling out */
+    font-family: Baskerville, serif;
+    
+}
+
+/* Individual Text Lines */
+.poem li {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    color: #161515;
+    opacity: 0.9;
+    animation: moveText 12s linear infinite;
+}
+.poem ul, .poem ol{
+    list-style-type: none;}
+
+/* Assign Unique Positions to Each Line */
+.poem li:nth-child(1) {
+    top: 10%; /* Line 1's vertical position */
+    animation-delay: 0s;
+}
+
+.poem li:nth-child(2) {
+    top: 20%; /* Line 2's vertical position */
+    animation-delay: 1s;
+}
+
+.poem li:nth-child(3) {
+    top: 30%; /* Line 3's vertical position */
+    animation-delay: 2s;
+}
+
+.poem li:nth-child(4) {
+    top: 40%; /* Line 4's vertical position */
+    animation-delay: 3s;
+}
+
+.poem li:nth-child(5) {
+    top: 50%; /* Line 5's vertical position */
+    animation-delay: 4s;
+}
+
+.poem li:nth-child(6) {
+    top: 60%; /* Line 6's vertical position */
+    animation-delay: 5s;
+}
+
+.poem li:nth-child(7) {
+    top: 70%; /* Line 7's vertical position */
+    animation-delay: 6s;
+}
+
+.poem li:nth-child(8) {
+    top: 80%; /* Line 8's vertical position */
+    animation-delay: 7s;
+}
+
+.poem li:nth-child(9) {
+    top: 90%; /* Line 9's vertical position */
+    animation-delay: 8s;
+}
+
+/* Smooth Movement Keyframes */
+@keyframes moveText {
+    0% {
+        transform: translateX(-110%); /* Start off-screen left */
+    }
+    50% {
+        transform: translateX(10%); /* Move across the middle */
+    }
+    100% {
+        transform: translateX(120%); /* End off-screen right */
+    }
+}
+
+
+
+.button-container {
+    text-align: center; /* Centers the buttons */
+    margin-top: 20px;  /* Adds spacing above */
+}
+
+button, .button-container a {
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(48, 46, 46);
+    background: #ffffff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 10px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover, .button-container a:hover {
+    background: #555;
+    transform: scale(1.05); /* Slight zoom on hover */
+}

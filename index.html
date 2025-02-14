@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forest</title>
+  
+  
+  <link rel="stylesheet" href="forest1.css">
+</head>
+<body>
+ 
+  <a class="info-link" href="info page.html" target="_blank">Info</a>
+ 
+  <div class="container">
+    <span class="fragment">F</span>
+    <span class="fragment">O</span>
+    <span class="fragment">R</span>
+    <span class="fragment">E</span>
+    <span class="fragment">S</span>
+    <span class="fragment">T</span>
+  </div>
+  
+  <div class="dot-navigation" id="dot" style="display: none;">
+    <span class="dot"></span>
+  </div>
+  
+
+  <div class="spacer"></div>
+
+ 
+  <div class="image-container-1">
+    <img src="images/for1.jpg" alt="Forest Image">
+  </div>
+
+ 
+ 
+  <script src="forest1.js"></script>
+
+  <div class="spacer-paragraph"></div>
+ 
+ <p> 
+  One touch of nature makes </p> <p>the whole world kin…
+  
+ </p>
+
+
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const paragraphs = document.querySelectorAll("p");
+  
+      const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add("reveal");
+              }
+          });
+      }, { threshold: 0.5 }); 
+  
+      paragraphs.forEach(p => observer.observe(p));
+  });
+  </script>
+  
+ <div class="spacer"></div>
+ <div class="spacer"></div>
+ 
+ <spacer-paragraph>— TROILUS AND CRESSIDA, ACT 3 SCENE 3, SHAKESPEARE  </spacer-paragraph>
+
+
+<section>
+  <div class="actions">
+    <a href="https://www.shakespeare.org.uk/explore-shakespeare/shakespedia/shakespeare-quotes-theme/shakespeare-quotes-environment/"
+      
+     rel="noreferrer noopener">
+     <span>discover more quotes</span>
+     
+</section>
+
+
+<div class="spacer"></div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+
+
+
+
+  <div class="image-gallery">
+    <div class="image-container">
+        <a href="poem.html">
+            <img src="images/Photo__Noora.jpg" alt="Image 1">
+        </a>
+    </div>
+    <div class="image-container">
+        <a href="poem2.html">
+            <img src="images/pond.jpeg" alt="Image 2">
+        </a>
+    </div>
+    <div class="image-container">
+        <a href="poem3.html">
+            <img src="images/plant.jpeg" alt="Image 3">
+        </a>
+    </div>
+</div>
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="footer">
+    <a href="mailto:leeq370@newschool.edu"> Mail me</a>
+</div>
+<div class="spacer"></div>
+ 
+  </div>
+</div>
+
+
+   </a>
+
+</div>
+
+
+
+  
+  </div>
+
+
+</body>
+</html>
